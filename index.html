@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Heavy Metal Band</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+  <!-- CookieYes script placeholder (replace with your real code) -->
+  <!-- <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/your_code_here/script.js"></script> -->
+</head>
+<body>
+<svg style="display: none">
+  <defs>
+    <symbol id="lightning-bolt" viewBox="0 0 24 24">
+      <path d="M11 15H6L13 1V9H18L11 23V15Z" />
+    </symbol>
+  </defs>
+  <use href="#circle-arrow-left"/>
+</svg>
+<header class="header">
+  <a href="index.html">
+    <img src="img/band-logo.svg" alt="Heavy Metal Band" class="logo" />
+  </a>
+  <div class="wrapper-nav-main">
+    <button class="button-nav-main" aria-label="Toggle Menu">
+      <svg class="icon-svg icon-menu" viewBox="0 0 24 24" height="24" width="24"><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" /></svg>
+      <svg class="icon-svg icon-close" viewBox="0 0 24 24" height="24" width="24"><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg>
+    </button>
+    <nav class="nav-main">
+      <a href="#bandinfo">Bandinfo</a>
+      <a href="#members">Members</a>
+      <a href="#shows">Shows</a>
+      <a href="#audio">Audio</a>
+      <a href="#video">Video</a>
+    </nav>
+  </div>
+</header>
+
+<main class="main">
+  <section class="hero">
+    <img src="img/band-logo.svg" alt="Heavy Metal Band" class="logo" />
+    <img src="img/band.webp" alt="Heavy Metal Band" class="image-hero" />
+    <nav class="nav-social">
+      <a href="#">
+        <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24" width="24"><title>Facebook</title><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z" /></svg>
+      </a>
+      <a href="#">
+        <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24" width="24"><title>YouTube</title><path d="M10,15L15.19,12L10,9V15M21.56,7.17C21.69,7.64 21.78,8.27 21.84,9.07C21.91,9.87 21.94,10.56 21.94,11.16L22,12C22,14.19 21.84,15.8 21.56,16.83C21.31,17.73 20.73,18.31 19.83,18.56C19.36,18.69 18.5,18.78 17.18,18.84C15.88,18.91 14.69,18.94 13.59,18.94L12,19C7.81,19 5.2,18.84 4.17,18.56C3.27,18.31 2.69,17.73 2.44,16.83C2.31,16.36 2.22,15.73 2.16,14.93C2.09,14.13 2.06,13.44 2.06,12.84L2,12C2,9.81 2.16,8.2 2.44,7.17C2.69,6.27 3.27,5.69 4.17,5.44C4.64,5.31 5.5,5.22 6.82,5.16C8.12,5.09 9.31,5.06 10.41,5.06L12,5C16.19,5 18.8,5.16 19.83,5.44C20.73,5.69 21.31,6.27 21.56,7.17Z" /></svg>
+      </a>
+      <a href="#">
+        <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24" width="24"><title>Instagram</title><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" /></svg>
+      </a>
+    </nav>
+  </section>
+
+  <section id="bandinfo" class="section is-centered">
+    <h1 class="headline-primary">Heavy Metal Band from Dresden</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec justo ac elit ultrices fermentum.
+      Sed vel risus nec nulla sagittis consequat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec justo ac elit ultrices fermentum.
+      Sed vel risus nec nulla sagittis consequat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec justo ac elit ultrices fermentum.
+      Sed vel risus nec nulla sagittis consequat.
+    </p>
+  </section>
+
+  <div class="separator">
+    <svg height="24" width="24">
+      <use href="#lightning-bolt" />
+    </svg>
+  </div>
+
+  <section id="members" class="section has-animation-forwards">
+    <h2 class="headline-secondary">Members</h2>
+    <div class="container-members">
+      <figure>
+        <img src="img/guitar.webp" alt="Guitar" />
+        <figcaption>Guitar</figcaption>
+      </figure>
+      <figure>
+        <img src="img/drums.webp" alt="Drums" />
+        <figcaption>Drums</figcaption>
+      </figure>
+      <figure>
+        <img src="img/bass.webp" alt="Bass" />
+        <figcaption>Bass</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="separator">
+    <svg height="24" width="24">
+      <use href="#lightning-bolt" />
+    </svg>
+  </div>
+
+  <section id="shows" class="section">
+    <h2 class="headline-secondary">Shows</h2>
+    <div class="container-shows">
+
+      <script charset="utf-8" src="https://widgetv3.bandsintown.com/main.min.js"></script>
+
+      <script charset="utf-8" src="https://widgetv3.bandsintown.com/main.min.js"></script>
+      <a class="bit-widget-initializer"
+
+         data-artist-name="id_5079"
+
+         data-events-to-display=""
+         data-background-color="rgba(18,18,18,1)"
+         data-separator-color="rgba(34,34,34,1)"
+         data-text-color="rgba(238,238,238,1)"
+         data-font="Helvetica"
+         data-auto-style="true"
+
+         data-button-label-capitalization="uppercase"
+         data-header-capitalization="uppercase"
+         data-location-capitalization="uppercase"
+         data-venue-capitalization="uppercase"
+         data-display-local-dates="true"
+         data-local-dates-position="tab"
+         data-display-past-dates="true"
+         data-display-details="false"
+         data-display-lineup="false"
+         data-display-start-time="false"
+         data-social-share-icon="false"
+         data-display-limit="all"
+
+         data-date-format="MMM. D, YYYY"
+         data-date-orientation="horizontal"
+         data-date-border-color="#4A4A4A"
+         data-date-border-width="1px"
+         data-date-capitalization="capitalize"
+         data-date-border-radius="10px"
+
+         data-event-ticket-cta-size="medium"
+         data-event-custom-ticket-text=""
+         data-event-ticket-text="TICKETS"
+         data-event-ticket-icon="false"
+         data-event-ticket-cta-text-color="rgba(255,255,255,1)"
+         data-event-ticket-cta-bg-color="rgba(74,74,74,1)"
+         data-event-ticket-cta-border-color="rgba(74,74,74,1)"
+         data-event-ticket-cta-border-width="0px"
+         data-event-ticket-cta-border-radius="2px"
+
+         data-sold-out-button-text-color="rgba(255,255,255,1)"
+         data-sold-out-button-background-color="rgba(74,74,74,1)"
+         data-sold-out-button-border-color="rgba(74,74,74,1)"
+         data-sold-out-button-clickable="true"
+
+         data-event-rsvp-position="left"
+         data-event-rsvp-cta-size="medium"
+         data-event-rsvp-only-show-icon="false"
+         data-event-rsvp-text="RSVP"
+         data-event-rsvp-icon="false"
+         data-event-rsvp-cta-text-color="rgba(74,74,74,1)"
+         data-event-rsvp-cta-bg-color="rgba(255,255,255,1)"
+         data-event-rsvp-cta-border-color="rgba(74,74,74,1)"
+         data-event-rsvp-cta-border-width="1px"
+         data-event-rsvp-cta-border-radius="2px"
+
+         data-follow-section-position="top"
+         data-follow-section-alignment="center"
+         data-follow-section-header-text="Get updates on new shows, new music, and more"
+         data-follow-section-cta-size="medium"
+         data-follow-section-cta-text="FOLLOW"
+         data-follow-section-cta-icon="false"
+         data-follow-section-cta-text-color="rgba(255,255,255,1)"
+         data-follow-section-cta-bg-color="rgba(74,74,74,1)"
+         data-follow-section-cta-border-color="rgba(74,74,74,1)"
+         data-follow-section-cta-border-width="0px"
+         data-follow-section-cta-border-radius="2px"
+
+         data-play-my-city-position="bottom"
+         data-play-my-city-alignment="center"
+         data-play-my-city-header-text="Don’t see a show near you?"
+         data-play-my-city-cta-size="medium"
+         data-play-my-city-cta-text="REQUEST A SHOW"
+         data-play-my-city-cta-icon="false"
+         data-play-my-city-cta-text-color="rgba(255,255,255,1)"
+         data-play-my-city-cta-bg-color="rgba(74,74,74,1)"
+         data-play-my-city-cta-border-color="rgba(74,74,74,1)"
+         data-play-my-city-cta-border-width="0px"
+         data-play-my-city-cta-border-radius="2px"
+
+         data-optin-font=""
+         data-optin-text-color=""
+         data-optin-bg-color=""
+         data-optin-cta-text-color=""
+         data-optin-cta-bg-color=""
+         data-optin-cta-border-width=""
+         data-optin-cta-border-radius=""
+         data-optin-cta-border-color=""
+
+         data-language="en"
+         data-layout-breakpoint="900"
+         data-app-id=""
+         data-affil-code=""
+         data-bit-logo-position="hidden"
+         data-bit-logo-color="rgba(238,238,238,1)"
+
+      ></a>
+    </div>
+  </section>
+
+  <div class="separator">
+    <svg height="24" width="24">
+      <use href="#lightning-bolt" />
+    </svg>
+  </div>
+
+  <section id="audio" class="section has-animation-forwards">
+    <h2 class="headline-secondary">Audio</h2>
+    <div class="container-audio">
+      <iframe class="iframe-bandcamp" width="700px" height="100%" src="https://bandcamp.com/EmbeddedPlayer/album=2856909968/size=large/bgcol=000000/linkcol=e63946/artwork=small/transparent=true/"></iframe>
+    </div>
+  </section>
+
+  <div class="separator">
+    <svg height="24" width="24">
+      <use href="#lightning-bolt" />
+    </svg>
+  </div>
+
+  <section id="video" class="section has-animation-forwards">
+    <h2 class="headline-secondary">Video</h2>
+    <div class="container-video">
+      <iframe class="iframe-video" width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/q6R2k0mbIMc?si=uC6AVRFTPgjBuE_h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <img src="img/band-logo.svg" alt="Heavy Metal Band" class="logo" />
+  <nav class="nav-footer">
+    <a href="imprint.html">Imprint</a>
+    <a href="privacy.html">Privacy</a>
+  </nav>
+  <div class="footer-meta">
+    <p>© 2025 Heavy Metal Band. All rights reserved.</p>
+  </div>
+  <div class="nav-footer-social">
+    <a href="#">
+      <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24" width="24"><title>Facebook</title><path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96A10 10 0 0 0 22 12.06C22 6.53 17.5 2.04 12 2.04Z" /></svg>
+    </a>
+    <a href="#">
+      <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24" width="24"><title>YouTube</title><path d="M10,15L15.19,12L10,9V15M21.56,7.17C21.69,7.64 21.78,8.27 21.84,9.07C21.91,9.87 21.94,10.56 21.94,11.16L22,12C22,14.19 21.84,15.8 21.56,16.83C21.31,17.73 20.73,18.31 19.83,18.56C19.36,18.69 18.5,18.78 17.18,18.84C15.88,18.91 14.69,18.94 13.59,18.94L12,19C7.81,19 5.2,18.84 4.17,18.56C3.27,18.31 2.69,17.73 2.44,16.83C2.31,16.36 2.22,15.73 2.16,14.93C2.09,14.13 2.06,13.44 2.06,12.84L2,12C2,9.81 2.16,8.2 2.44,7.17C2.69,6.27 3.27,5.69 4.17,5.44C4.64,5.31 5.5,5.22 6.82,5.16C8.12,5.09 9.31,5.06 10.41,5.06L12,5C16.19,5 18.8,5.16 19.83,5.44C20.73,5.69 21.31,6.27 21.56,7.17Z" /></svg>
+    </a>
+    <a href="#">
+      <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24" width="24"><title>Instagram</title><path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z" /></svg>
+    </a>
+  </div>
+</footer>
+
+<a href="#" class="link-to-top" aria-label="Back to Top">
+  <svg class="icon-svg" viewBox="0 0 24 24" height="24" width="24"><path d="M7,15L12,10L17,15H7Z" /></svg>
+</a>
+
+<script src="js/nav.js"></script>
+</body>
+</html>
