@@ -1,21 +1,21 @@
-/* Variables */
+/*** Variables ***/
 
 :root {
     --spacing: 0.5em;
-    --nav-width: 70vw;
     --color-accent: #ffb633;
     --color-bg: #121212;
     --transition-duration: 0.15s;
-
     --color-fg: #eee;
+
     --color-grey: #222;
     --color-grey-alpha-80: rgb(from var(--color-grey) r g b / 0.8);
     --font-heading: 'IM Fell English SC';
     --nav-main-height: calc(var(--nav-main-item-height) + calc(var(--spacing)*4));
     --nav-main-item-height: 2em;
+    --nav-main-width: 70vw;
 }
 
-/* Reset/Normalize */
+/*** Reset/Normalize ***/
 
 blockquote,
 body,
@@ -162,7 +162,7 @@ video
     max-width: 100%;
 }
 
-/* Animations */
+/*** Animations ***/
 
 @keyframes fade-in {
     to {
@@ -302,6 +302,21 @@ a {
     &.is-centered {
         text-align: center;
     }
+
+    &.has-text-blocks {
+        ul,
+        ol {
+            margin-left: 1.25em;
+        }
+
+        ul {
+            list-style: disc;
+        }
+
+        ol {
+            list-style: decimal;
+        }
+    }
 }
 
 /* Margins */
@@ -397,6 +412,10 @@ a {
     margin-block: 1em;
 }
 
+.nav-footer-social svg {
+    fill: currentColor;
+}
+
 /* Hero */
 
 .hero {
@@ -412,6 +431,13 @@ a {
         padding: 1em;
         position: absolute;
         transform: translateX(-50%);
+
+        & svg {
+            fill: currentColor;
+            width: 2em;
+            height: 2em;
+            display: block;
+        }
     }
 
     & .icon-svg {
@@ -471,7 +497,7 @@ a {
     grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
 }
 
-/* Small screen */
+/*** Media queries ***/
 
 @media (max-width: 40em) {
     .container-audio {
@@ -483,27 +509,29 @@ a {
     .nav-main {
         align-items: flex-end;
         background: var(--color-grey);
+        box-sizing: border-box;
         flex-direction: column;
         font-size: 1.25em;
         font-weight: 600;
+        height: 100vh;
         justify-content: flex-start;
-        padding: 4em 0.5em 2em;
+        min-width: var(--nav-main-width);
+        padding: 4em 2em 2em;
         position: fixed;
         right: 0;
         top: 0;
         transform: translateX(100%);
         transition: var(--transition-duration);
-        min-width: var(--nav-width);
-        height: 100vh;
 
         & a {
-            padding-inline: 2em;
+            text-align: right;
+            width: 100%;
         }
     }
 
     .wrapper-nav-main.is-active {
         & .nav-main {
-            box-shadow: calc(-1*var(--nav-width)) 0 0 var(--color-grey-alpha-80);
+            box-shadow: calc(-1*var(--nav-main-width)) 0 0 var(--color-grey-alpha-80);
             transform: translateX(0);
         }
 

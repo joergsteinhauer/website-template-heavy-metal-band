@@ -1,15 +1,30 @@
 # Heavy Metal Band One-Page Template
 
-This is a modern, dark-themed one-page HTML/CSS template tailored for heavy metal bands. It uses semantic HTML, responsive layouts via CSS Grid and Flexbox, and pure CSS enhancements like parallax titles. Minimal JavaScript is included only for toggling the mobile menu.
+> This is a modern, dark-themed one-page HTML/CSS template tailored for heavy metal bands. 
+It uses semantic HTML, responsive layouts via CSS Grid and Flexbox, and pure CSS enhancements for animations. 
+Minimal JavaScript included for better UX.
+
+## Demo
+
+[View the full demo](https://joergsteinhauer.github.io/website-template-heavy-metal-band/)
+
+## Preview
+
+| Mobile view | Desktop view                        |
+|-------------|-------------------------------------|
+| ![preview.png](preview/preview-mobile.png)     | ![preview.png](preview/preview-desktop.png) |
 
 ## Features
+
 - Fully responsive (mobile-first)
 - Pure CSS layout (no frameworks)
 - Pure CSS animations using `animation-timeline`
 - Smooth anchor link scrolling
 - Fixed header & mobile menu
 - Accessible, semantic, and clean structure
-- Minimal JavaScript (only for menu toggle)
+- Minimal JavaScript
+- Bandsintown gigs overview embed
+- Optional: Cookie Management Platform via cookieyes.com
 
 ---
 
@@ -58,8 +73,17 @@ All icons use SVGs from [Pictogrammers MDI](https://pictogrammers.com/library/md
 
 ## License
 
+### Code
+
 MIT – feel free to reuse and modify!
+
+### Images
+
+- https://unsplash.com/de/@iam_os
+- https://unsplash.com/de/@beccatapert
+- https://unsplash.com/de/@gearfilms
+- https://unsplash.com/de/@hectorbermudez
 
 ## Version
 
-V1.0.0
+V1.0.1
