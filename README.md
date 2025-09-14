@@ -83,6 +83,9 @@ MIT – feel free to reuse and modify!
 - https://unsplash.com/de/@beccatapert
 - https://unsplash.com/de/@gearfilms
 - https://unsplash.com/de/@hectorbermudez
+- https://unsplash.com/de/@storybyphil
+- https://unsplash.com/de/@studiokvr
+- https://unsplash.com/de/@ysp_19
 
 ## Version
 

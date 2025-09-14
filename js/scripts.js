@@ -2,9 +2,47 @@
 
 const buttonNavMain = document.querySelector('.button-nav-main');
 const wrapperNavMain = document.querySelector('.wrapper-nav-main');
+const navMain = document.querySelector('.nav-main');
 
-buttonNavMain.addEventListener('click', () => {
-    wrapperNavMain.classList.toggle('is-active');
+const toggleNav = (active) => {
+    // Use the 'active' parameter to force a state, or toggle if it's undefined
+    wrapperNavMain.classList.toggle('is-active', active);
+    buttonNavMain.setAttribute('aria-expanded', wrapperNavMain.classList.contains('is-active'));
+};
+
+// Toggle menu on button click
+buttonNavMain.addEventListener('click', (e) => {
+    e.stopPropagation(); // Prevent the click from bubbling up to the document
+    toggleNav();
+});
+
+// Close menu when a navigation link is clicked
+navMain.addEventListener('click', (e) => {
+    // Check if a link was clicked inside the nav
+    if (e.target.closest('a')) {
+        toggleNav(false); // Force-close the menu
+    }
+});
+
+// Close menu when clicking outside of it
+document.addEventListener('click', (e) => {
+    if (wrapperNavMain.classList.contains('is-active')) {
+        // Check if the click was inside the nav or on the button
+        const isClickInsideNav = navMain.contains(e.target);
+        const isClickOnButton = buttonNavMain.contains(e.target);
+
+        if (!isClickInsideNav && !isClickOnButton) {
+            toggleNav(false);
+        }
+    }
+});
+
+// Close menu with the Escape key for accessibility
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && wrapperNavMain.classList.contains('is-active')) {
+        toggleNav(false);
+        buttonNavMain.focus(); // Return focus to the button
+    }
 });
 
 /* Back to top button */
@@ -32,3 +70,13 @@ if (linkToTop) {
         });
     });
 }
+
+/* Set current year */
+const setCopyrightYear = () => {
+    const containerYear = document.querySelector('#current-year');
+    if (containerYear) {
+        containerYear.textContent = new Date().getFullYear();
+    }
+};
+
+setCopyrightYear();

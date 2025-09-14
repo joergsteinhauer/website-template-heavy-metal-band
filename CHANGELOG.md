@@ -2,9 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
-## [1.0.0] – 2025-09-12
+## [1.1.0] – 2025-09-14
 
-- First commit, added all the files
+- Added "Releases" box [minor]
+- Upgraded on scroll animations
+- Improved menu behavior
+- Added function to always set the current year in the footer section
 
 ## [1.0.1] – 2025-09-14
 
@@ -15,3 +18,7 @@ All notable changes to this project will be documented in this file.
 - Slight menu adjustments
 - Update and enhance readme file
 - Added menu to sub-pages
+
+## [1.0.0] – 2025-09-12
+
+- First commit, added all the files
