@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.1] – 2025-09-18
+
+- Update main navigation menu
+- Added header logo animation on hover
+- Enhanced anchor position when navigation via main menu
+- Set imprint text to English
+
 ## [1.1.0] – 2025-09-14
 
 - Added "Releases" box [minor]

@@ -282,6 +282,10 @@ a {
     }
 }
 
+.box-anchor {
+    transform: translateY(-5em);
+}
+
 
 /*** Layout ***/
 
@@ -305,6 +309,11 @@ a {
         flex-shrink: 1;
         height: 2em;
         max-width: calc(100% - 5em);
+        transition: transform var(--transition-duration);
+
+        &:hover {
+            transform: translateY(-0.125em);
+        }
     }
 }
 
